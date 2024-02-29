@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CGPA Calculator</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Grade Point (G)</th>
+                    <th>Credit Point (C)</th>
+                    <th>G*P</th>
+                </tr>
+            </thead>
+            <tbody id="gradeTable">
+                <!-- Grades will be added dynamically here -->
+            </tbody>
+        </table>
+        <button onclick="addRow()">Add Subject</button>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
